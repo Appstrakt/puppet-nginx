@@ -38,6 +38,7 @@ class nginx::params {
   $nx_keepalive_timeout       = 65
   $nx_tcp_nodelay             = on
   $nx_gzip                    = on
+  $nx_include_patterns        = []
   $nx_server_tokens           = on
   $nx_spdy                    = off
   $nx_ssl_stapling            = off

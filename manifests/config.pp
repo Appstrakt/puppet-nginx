@@ -36,6 +36,7 @@ class nginx::config(
   $http_access_log        = $nginx::params::nx_http_access_log,
   $proxy_buffer_size      = $nginx::params::nx_proxy_buffer_size,
   $gzip                   = $nginx::params::nx_gzip,
+  $include_patterns       = $nginx::params::nx_include_patterns,
 ) inherits nginx::params {
 
   if $caller_module_name != $module_name {
